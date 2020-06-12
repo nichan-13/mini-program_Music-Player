@@ -36,7 +36,7 @@
 
 - 导入项目填写**测试号**即可
 
-- 将 `pages/index/index.js` 中 `data( { playlist.src } )` 音乐链接换成自己的链接，建议搭建一个本地服务器
+- 将 `pages/index/index.js` 中 `data({ playlist.src })` 音乐链接换成自己的链接，建议搭建一个本地服务器
 
 
 ## 参考文档  
