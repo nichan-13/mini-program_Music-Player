@@ -1,0 +1,87 @@
+/* pages/hotMusic/hotMusic.wxss */
+.hot-music {
+  padding: 0 30rpx;
+}
+
+/* 去除滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.gf-list {
+  margin-bottom: 80rpx;
+}
+
+.list-text {
+  display: block;
+  margin-bottom: 30rpx;
+  font-weight: 600;
+  color: rgb(83, 47, 47);
+  margin-left: 8rpx;
+}
+
+.gf-list-info {
+  display: flex;
+  flex-direction: row;
+  height: 200rpx;
+  width: 100%;
+  border: 1rpx solid rgb(240, 240, 240);
+  margin: 15rpx 0;
+  border-radius: 15rpx;
+}
+
+.gf-img {
+  display: block;
+  height: 200rpx;
+  width: 200rpx;
+  border-top-left-radius: 15rpx;
+  border-bottom-left-radius: 15rpx;
+}
+
+.gf-text {
+  display: flex;
+  width: 465rpx;
+  flex-direction: column;
+  margin-left: 25rpx;
+  color: rgb(71, 69, 69);
+  font-size: 9pt;
+  padding: 8rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.gf-text text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.tj-list>.tj-list-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tj-list>.tj-list-inner>.tj-list-item {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.tj-list-item>image {
+  display: block;
+  width: 210rpx;
+  margin: 0 auto;
+  height: 210rpx;
+  flex: 1;
+  border-radius: 15rpx;
+}
+
+.tj-list-item>text {
+  display: block;
+  font-size: 8pt;
+  color: rgb(29, 28, 28);
+  margin-top: 5rpx;
+}

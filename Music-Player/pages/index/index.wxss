@@ -1,0 +1,259 @@
+/**index.wxss**/
+
+page {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: rgb(211, 159, 143);
+  height: 100%;
+}
+
+.tab {
+  display: flex;
+  background-color: rgb(247, 244, 225);
+}
+
+.tab-item {
+  flex: 1;
+  font-size: 11pt;
+  text-align: center;
+  line-height: 90rpx;
+  border-bottom: 6rpx solid rgb(236, 236, 236);
+}
+
+.tab-item.active {
+  color: rgb(141, 93, 79);
+  border-bottom-color: rgb(141, 93, 79);
+}
+
+.content {
+  flex: 1;
+}
+
+.content>swiper {
+  height: 100%;
+}
+
+/* footer 底部播放器 */
+.player {
+  display: flex;
+  align-items: center;
+  background: rgb(247, 244, 225);
+  border-top: 1px solid rgb(236, 236, 236);
+  height: 112rpx;
+}
+
+.player-cover {
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 15rpx;
+  border-radius: 8rpx;
+  border: 1px solid #ccc;
+}
+
+.player-info {
+  flex: 1;
+  font-size: 10pt;
+  line-height: 38rpx;
+  margin-left: 20rpx;
+  padding: 8rpx 0;
+  text-overflow: ellipsis;
+  /* 小程序需要加的属性 */
+  overflow: hidden;
+  white-space: nowrap;
+  /* 强制不换行 */
+}
+
+.play-info-singer {
+  margin-top: 4rpx;
+  color: rgb(153, 125, 125);
+  font-size: 9pt;
+}
+
+.player-controls image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 15rpx;
+}
+
+
+
+/* ----- info.wxml ----- */
+.content-info {
+  height: 100%;
+}
+
+/* 去除滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* 轮播图 */
+.content-info-slide {
+  height: 380rpx;
+  margin-bottom: 10px;
+}
+
+.content-info-slide image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 功能按钮 */
+.content-info-icon {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.content-info-icon>view {
+  flex: 1;
+  font-size: 11pt;
+  text-align: center;
+  color: rgb(141, 93, 79);
+}
+
+.content-info-icon image {
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  margin: 30rpx auto;
+}
+
+/* 推荐歌曲 */
+.content-info-list {
+  font-size: 11pt;
+  margin-bottom: 20rpx;
+}
+
+.list-title {
+  margin: 20rpx 35rpx;
+  color: rgb(156, 83, 83);
+}
+
+.content-info-list>.list-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20rpx;
+}
+
+.content-info-list>.list-inner>.list-item {
+  flex: 1;
+}
+
+.list-item>image {
+  display: block;
+  width: 210rpx;
+  height: 210rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  border: 1rpx solid rgb(209, 209, 209);
+}
+
+.list-item>view {
+  width: 200rpx;
+  margin: 10rpx auto;
+  margin-bottom: 28rpx;
+  font-size: 10pt;
+  text-align: center;
+  color: rgba(116, 98, 84, 0.856);
+  text-overflow: ellipsis;
+  /* 小程序需要加的属性 */
+  overflow: hidden;
+  white-space: nowrap;
+  /* 省略号 */
+}
+
+
+
+/* ----- play.wxml ----- */
+.content-playlist {
+  height: 100%;
+}
+
+.content-play {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.content-play-info > text {
+  font-size: 13pt;
+  margin-bottom: 8px;
+}
+
+.content-play-info > view {
+  color: rgb(155, 153, 153);
+  font-size: 10pt;
+}
+
+.content-play-cover image {
+  animation: rotateImg 10s linear infinite;
+  width: 450rpx;
+  height: 450rpx;
+  border-radius: 50%;
+  border: 1px solid rgb(151, 151, 151);
+}
+
+@keyframes rotateImg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 进度条部分 */
+.content-play-progress {
+  display: flex;
+  align-items: center;
+  margin: 0 35rpx;
+  font-size: 9pt;
+  text-align: center;
+}
+
+.content-play-progress > view {
+  flex: 1;
+}
+
+
+
+/* ----- playlist.wxml ----- */
+.playlist-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid rgb(235, 235, 235);
+  margin-bottom: 5rpx;
+  padding: 15rpx;
+}
+
+.playlist-cover {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 8rpx;
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.playlist-info {
+  flex: 1;
+  font-size: 10pt;
+  margin-left: 20rpx;
+  padding: 8rpx 0;
+}
+
+.playlist-info-singer {
+  margin-top: 10rpx;
+  font-size: 8pt;
+  color: rgb(153, 125, 125);
+}
+
+.playlist-controls {
+  font-size: 10pt;
+  margin-right: 20rpx;
+  color: #c25b5b;
+}

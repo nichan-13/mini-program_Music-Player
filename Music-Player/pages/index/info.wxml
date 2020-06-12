@@ -1,0 +1,61 @@
+<!-- info.wxml -->
+<scroll-view class="content-info" scroll-y="true">
+	<!-- 轮播图组件 -->
+	<swiper class="content-info-slide" indicator-dots="true" indicator-color="rgba(0,0,0,.3)" autoplay interval="5000" duration="1000" circular>
+		<swiper-item>
+			<image src="/image/lb1.jpg" />
+		</swiper-item>
+		<swiper-item>
+			<image src="/image/lb2.jpg" />
+		</swiper-item>
+		<swiper-item>
+			<image src="/image/lb0.jpg" />
+		</swiper-item>
+	</swiper>
+	<!-- 功能按钮 -->
+	<view class="content-info-icon">
+		<view bindtap="modalcnt">
+			<image src="/image/icon/FM.png" />
+			<text>私人FM</text>
+		</view>
+		<view bindtap="modalcnt">
+			<image src="/image/icon/like.png" />
+			<text>猜你喜欢</text>
+		</view>
+		<view bindtap="toHotMusicPage">
+			<image src="/image/icon/ph.png" />
+			<text>新歌热榜</text>
+		</view>
+	</view>
+	
+	<!-- 音乐部分 -->
+	<view class="content-info-list">
+		<view class="list-title">推荐歌曲</view>
+		<view class="list-inner">
+			<view class="list-item">
+				<image src="/image/CP.png"></image>
+				<view>Empty Cups</view>
+			</view>
+			<view class="list-item">
+				<image src="/image/CP.png"></image>
+				<view>Attention</view>
+			</view>
+			<view class="list-item">
+				<image src="/image/CP.png"></image>
+				<view>How Long</view>
+			</view>
+			<view class="list-item">
+				<image src="/image/CP.png"></image>
+				<view>LA Girls</view>
+			</view>
+			<view class="list-item">
+				<image src="/image/CP.png"></image>
+				<view>BOY</view>
+			</view>
+			<view class="list-item">
+				<image src="/image/CP.png"></image>
+				<view>Look At Me Now</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>

@@ -1,0 +1,68 @@
+<!--pages/hotMusic/hotMusic.wxml-->
+<view class="hot-music">
+	<view class="gf-list">
+		<text class="list-text">官方榜</text>
+		<view class="gf-list-info">
+			<image class="gf-img" src="/image/hotMusic/bs.jpg"></image>
+			<view class="gf-text">
+				<text>1.隐形人 - 二珂</text>
+				<text>2.万有引力 - F*yy</text>
+				<text>3.Death By A Thousand Cuts(Live From Paris) - Taylor Swift</text>
+			</view>
+		</view>
+		<view class="gf-list-info">
+			<image class="gf-img" src="/image/hotMusic/xg.jpg"></image>
+			<view class="gf-text">
+				<text>1.丢了你 - 井胧</text>
+				<text>2.万有引力 - F*yy</text>
+				<text>3.分手跳跃(Live) - 隔壁老樊</text>
+			</view>
+		</view>
+		<view class="gf-list-info">
+			<image class="gf-img" src="/image/hotMusic/rg.jpg"></image>
+			<view class="gf-text">
+				<text>1.夏天的风 - 火羊瞌睡了</text>
+				<text>2.与我无关 - 阿冗</text>
+				<text>3.丢了你 - 井胧</text>
+			</view>
+		</view>
+		<view class="gf-list-info">
+			<image class="gf-img" src="/image/hotMusic/yc.jpg"></image>
+			<view class="gf-text">
+				<text>1.重(Live) - 隔壁老樊</text>
+				<text>2.十八 - 张小伙/粥粥zxr</text>
+				<text>3.顶满 - Yee</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="tj-list">
+		<text class="list-text">推荐榜</text>
+			<view class="tj-list-inner">
+				<view class="tj-list-item">
+					<image src="/image/hotMusic/sc.png"></image>
+					<text>云音乐说唱榜</text>
+				</view>
+				<view class="tj-list-item">
+					<image src="/image/hotMusic/gd.png"></image>
+					<text>云音乐古典音乐榜</text>
+				</view>
+				<view class="tj-list-item">
+					<image src="/image/hotMusic/dy.png"></image>
+					<text>云音乐电音榜</text>
+				</view>
+				<view class="tj-list-item">
+					<image src="/image/hotMusic/acg.png"></image>
+					<text>云音乐ACG音乐榜</text>
+				</view>
+				<view class="tj-list-item">
+					<image src="/image/hotMusic/xs.png"></image>
+					<text>云音乐新声榜</text>
+				</view>
+				<view class="tj-list-item">
+					<image src="/image/hotMusic/gdb.png"></image>
+					<text>云音乐国电榜</text>
+				</view>
+			</view>
+		</view>
+	</view>

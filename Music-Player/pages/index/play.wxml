@@ -1,0 +1,21 @@
+<!-- play.wxml 播放器 -->
+
+<view class="content-play">
+	<!-- 显示音乐信息 -->
+	<view class="content-play-info">
+		<text>{{play.title}}</text>
+		<view>—— {{play.singer}} ——</view>
+	</view>
+	<!-- 显示专辑封面 -->
+	<view class="content-play-cover">
+		<image src="{{play.coverImgUrl}}" style="animation-play-state:{{state}}"></image>
+	</view>
+	<!-- 显示播放进度和时间 -->
+	<view class="content-play-progress">
+		<text>{{play.currentTime}}</text>
+		<view>
+			<slider bindchange="sliderChange" activeColor="rgb(156, 83, 83)" block-size="12" backgroundColor="#dadada" value="{{play.percent}}"></slider>
+		</view>
+		<text>{{play.duration}}</text>
+	</view>
+</view>
